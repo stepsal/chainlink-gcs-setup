@@ -1,6 +1,20 @@
 # chainlink-gcs-setup
-Chainlink Node Automated Setup for Google Cloud 
+Chainlink Node Automated Setup for Google Cloud.
+This script creates a VPS and automatically provisions a Chainlink node right up to GUI login.
+This node setup is for demo purposes only and should not be considered as suitable for mainnet.
 
+# Pre-requisites
+You are running on Linux or Mac OS ( Linux VM should work on Windows).
+
+You have signed up for Google Cloud Account.
+
+Git and gcloud have been installed on your host machine.
+
+You have created a new project (with billing enabled) on Google Cloud.
+
+You have a http://fiews.io/ or similar Ethereum node as a service account.
+
+# Steps
 Clone this repo
 
 ```git clone https://github.com/stepsal/chainlink-gcs-setup.git```
@@ -8,7 +22,7 @@ Clone this repo
 Modify the cl_node_initial_setup.bsh script in a text editor
 Replace the placeholders ETHNODE_ADDRESS, WALLET_PASSWORD, API_USER and API_PASSWORD with your desired config.
 
-Open the HTTP port on your project If its not already.
+Open the HTTP port 6688 on your project.
 
 ```gcloud compute firewall-rules create default-allow-http --allow tcp:6688```
 
@@ -22,3 +36,8 @@ The startup script will still be running in the background. To monitor the ongoi
  ```gcloud compute ssh chainlink-node-primary --command 'tail -f /var/log/daemon.log'```
 
 Once the startup scripts says it has completed, you can login to your (Ropsten) Chainlink node via http://your_external_ip:6688
+
+# Post installation steps
+If you dont want to have passwords in plain text on the node you can remove the passwords file after installation. Make sure you have them written down and stored safely somewhere
+
+```rm -rf /var/chainlink-ropsten/.api /var/chainlink-ropsten/.password```
