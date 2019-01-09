@@ -22,3 +22,4 @@ The startup script will still be running in the background. To monitor the ongoi
  ```gcloud compute ssh chainlink-node-primary --command 'tail -f /var/log/daemon.log'```
 
 Once the startup scripts says it has completed login to your (Ropsten) Chainlink node via the HTTP link.
+http://<PUBLIC_IP>:6688 
