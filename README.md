@@ -22,6 +22,11 @@ Clone this repo
 Modify the cl_node_initial_setup.bsh script in a text editor
 Replace the placeholders ETHNODE_ADDRESS, WALLET_PASSWORD, API_USER and API_PASSWORD with your desired config.
 
+ETHNODE_ADDRESS = ethereum node address
+WALLET_PASSWORD = wallet\node password
+API_USER = Chainlink username
+API_PASSWORD = Chainlink password
+
 Open the HTTP port 6688 on your project.
 
 ```gcloud compute firewall-rules create default-allow-http --allow tcp:6688```
