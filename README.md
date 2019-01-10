@@ -15,12 +15,15 @@ You have created a new project (with billing enabled) on Google Cloud.
 You have a http://fiews.io/ or similar Ethereum node as a service account.
 
 ## Installation Steps
-Clone this repo
+Clone the repo
 
 ```git clone https://github.com/stepsal/chainlink-gcs-setup.git```
 
-Modify the cl_node_initial_setup.bsh script in a text editor.
+CD into the directory.
 
+```cd chainlink-gcs-setup```
+
+Modify the cl_node_initial_setup.bsh script in a text editor.
 Replace the placeholders ETHNODE_ADDRESS, WALLET_PASSWORD, API_USER and API_PASSWORD with your desired config.
 
 Open the HTTP port 6688 on your project.
