@@ -70,7 +70,7 @@ rm -rf /var/chainlink-ropsten/.api /var/chainlink-ropsten/.password
 
 Variable | Description | Example
 -------- | ----------- | -------
-`ETHNODE_ADDRESS` | The WS endpoint URL for your Ethereum node. | Fiews: `wss://cl-ropsten.fiews.io/v1/yourapikey` LP: `wss://ropsten-rpc.linkpool.io/ws
+`ETHNODE_ADDRESS` | The WS endpoint URL for your Ethereum node. | Fiews: `wss://cl-ropsten.fiews.io/v1/yourapikey` LP: `wss://ropsten-rpc.linkpool.io/ws`
 `WALLET_PASSWORD` | A (secure) password for your Ethereum wallet. | `U!^926*KmBqsj68RpcI$*!w9$YpSTJK!#T`
 `API_USER` | The email you want to use to sign in to your CL node. | `you@example.com`
 `API_PASSWORD` | The password you want to use to sign in to your CL node. | `yourpassword123`
