@@ -19,7 +19,7 @@ Clone the repo
 
 ```git clone https://github.com/stepsal/chainlink-gcs-setup.git```
 
-CD into the directory.
+cd into the directory.
 
 ```cd chainlink-gcs-setup```
 
