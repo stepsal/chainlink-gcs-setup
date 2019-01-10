@@ -19,7 +19,8 @@ Clone this repo
 
 ```git clone https://github.com/stepsal/chainlink-gcs-setup.git```
 
-Modify the cl_node_initial_setup.bsh script in a text editor
+Modify the cl_node_initial_setup.bsh script in a text editor.
+
 Replace the placeholders ETHNODE_ADDRESS, WALLET_PASSWORD, API_USER and API_PASSWORD with your desired config.
 
 Open the HTTP port 6688 on your project.
