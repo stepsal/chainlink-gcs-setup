@@ -32,7 +32,7 @@ Open the HTTP port 6688 on your project.
 
 Provision the VPS and automatically install the Chainlink node. You may want to modify the --zone variable to your local zone.
 
- ```gcloud compute instances create chainlink-node-primary --machine-type g1-small --image-family debian-9 --image-project debian-cloud --zone europe-west1-b  --restart-on-failure  --tags http-server --metadata-from-file startup-script=cl_node_initial_setup.bsh```
+ ```gcloud compute instances create chainlink-node-primary --machine-type g1-small --image-family debian-9 --image-project debian-cloud --zone europe-west1-b  --restart-on-failure  --tags http-server --metadata-from-file startup-script=cl_node_initial_setup.sh```
 
 When the instance is created take note of its EXTERNAL_IP.
 The startup script will still be running in the background. To monitor the ongoing install, run the command.
