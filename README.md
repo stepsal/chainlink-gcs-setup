@@ -13,7 +13,7 @@ This node setup is for demo purposes only and should not be considered as suitab
 
 * You have created a new project (with billing enabled) on Google Cloud.
 
-* In this project you have enabled the [Compute Engine API](https://console.cloud.google.com/apis/api/compute.googleapis.com/overview) 
+* In this project you have enabled the [Compute Engine API](https://console.cloud.google.com/apis/api/compute.googleapis.com/overview).
 
 * You have a [Fiews.io](https://fiews.io/) or similar Ethereum node as a service (EaaS) account.
 
